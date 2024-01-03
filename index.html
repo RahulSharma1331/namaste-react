@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root">
+        <!-- Print a message on browser using HTML.
+        <h1>Hello World using HTML!</h1> -->
+    </div>
+
+    <!-- Print a message on browser using JS. Browser has JS Engine, so, it understands what is document and all (JS).
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World using JS !";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script> -->
+
+    <!-- Print a message on browser using React. 
+    We need to bring all the super power of React to our code, so that we can use React in our code. 
+    Below two script tags are from "CDN React", where the JS library (React) is available. -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./App.js"></script>
+</body>
+</html>
