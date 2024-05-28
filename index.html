@@ -1,0 +1,41 @@
+<!-- Lecture: 01 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css">
+        <title>Namaste React 🚀</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <!-- Write "Hello World !!!", using HTML.
+            <h1>Hello World !!! Using HTML.</h1> -->
+
+            <!-- Write "Hello World !!!", using JavaScript.
+            To use JavaScript in the HTML file, use "script" tag.
+            <script>
+                const heading = document.createElement("h1");
+                heading.innerHTML = "Hello World !!! Using JavaScript.";
+
+                const root = document.getElementById("root");
+                root.appendChild(heading);
+            </script> -->
+
+            <!-- Write "Hello World !!!", using React. -->
+            <!-- Browser understands JS, reason why above codes are running. But Browser doesn't knows/ understands React. We need to explicitly let Browser know. -->
+            <!-- CDN is a place where React library is hoisted. When we include below scripts, we imported React & now Browser will understand React. -->
+            
+            <!-- react.development.js is a core react file -->
+            <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+            <!-- react-dom.development.js is used for dom manipulations. It acts like a bridge & connects with DOM -->
+            <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+            <!-- Moved all the React/JS stuff to a separate file named "App.js"-->
+            <script src="./App.js"></script>
+        </div>
+    </body>
+</html>
