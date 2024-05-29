@@ -29,13 +29,14 @@
             <!-- CDN is a place where React library is hoisted. When we include below scripts, we imported React & now Browser will understand React. -->
             
             <!-- react.development.js is a core react file -->
-            <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
 
             <!-- react-dom.development.js is used for dom manipulations. It acts like a bridge & connects with DOM -->
-            <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
+            <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+            <!-- NOTE: Including React using CDN Links is a costly operation, so, install React using npm. -->
+            
             <!-- Moved all the React/JS stuff to a separate file named "App.js"-->
-            <script src="./App.js"></script>
+            <script type="module" src="./App.js"></script>
         </div>
     </body>
 </html>
